@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
+:root {
+	--green: rgb(18, 194, 41);
+	--dark_green: rgb(59, 134, 69);
+}
+
+.loading_gif {
+	background-image: url(../images/loading_gif.gif);
+	width: 100%;
+	height: 100vh;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	animation: fade_out 3s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade_out {
+	100% {
+		position: absolute;
+		z-index: -1;
+	}
+}
+
+.virtual_assistant_wrapper {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 80% 20%;
+}
+
+.status_and_interacting_images {
+	display: grid;
+	grid-template-columns: 15% 70% 15%;
+	background-color: black;
+}

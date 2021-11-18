@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ! CSS Styles -->
+    <link rel="stylesheet" href="style/main.css">
+    <link rel="stylesheet" href="style/left_status.css">
+    <link rel="stylesheet" href="style/interacting_images.css">
+    <link rel="stylesheet" href="style/right_status.css">
+    <link rel="stylesheet" href="style/commands_and_buttons.css">
+    <link rel="stylesheet" href="style/app_technologies.css">
+    <link rel="stylesheet" href="style/pop_up_template.css">
+
+    <!-- ! Google Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Virtual Assistant</title>
+</head>
+
+<body>
+    <!-- ! Loading Gif at the first few seconds while the app is loading -->
+    <div class="loading_gif"></div>
+    
+    <!-- ! Main app content -->
+    <div class="virtual_assistant_wrapper">
+
+        <!-- ! Status and Interacting Images -->
+        <div class="status_and_interacting_images">
+
+            <div class="left_status_wrapper">
+                <!-- ! Date and Time -->
+                <div class="date_and_time_wrapper">
+                    <div class="date_wrapper">
+                        <div class="outer_circle">
+                            <div class="inner_circle">
+                                <div class="month"></div>
+                                <div class="date"></div>
+                            </div>
+                            <div class="one_fourth_circle"></div>
+                        </div>
+                    </div>
+
+                    <div class="time_wrapper">
+                        <div class="time"></div>
+                        <div class="top_right_circle"></div>
+                        <div class="bottom_right_circle"></div>
+                    </div>
+                </div>
+
+                <!-- ! Technologies used to build this app -->
+                <div class="app_technologies_wrapper">
+                    <div class="left_decoration">
+                        <div class="long_line"></div>
+                    </div>
+
+                    <div class="app_technologies_list">
+                        <div class="single_technology_wrapper">
+                            <div class="technology_name">HTML</div>
+                            <div class="technology_status_bar status_1"></div>
+                        </div>
+
+                        <div class="single_technology_wrapper">
+                            <div class="technology_name">CSS</div>
+                            <div class="technology_status_bar status_2"></div>
+                        </div>
+
+                        <div class="single_technology_wrapper">
+                            <div class="technology_name">JavaScript</div>
+                            <div class="technology_status_bar status_3"></div>
+                        </div>
+
+                        <div class="single_technology_wrapper">
+                            <div class="technology_name">SpeechRecognition</div>
+                            <div class="technology_status_bar status_4"></div>
+                        </div>
+
+                        <div class="single_technology_wrapper">
+                            <div class="technology_name">Node.js & MongoDB</div>
+                            <div class="technology_status_bar status_5"></div>
+                        </div>
+
+                        <div class="single_technology_wrapper">
+                            <div class="technology_name">Puppeteer.js</div>
+                            <div class="technology_status_bar status_6"></div>
+                        </div>
+
+                        <div class="single_technology_wrapper">
+                            <div class="technology_name">Nodemailer.js</div>
+                            <div class="technology_status_bar status_7"></div>
+                        </div>
+
+                        <div class="single_technology_wrapper">
+                            <div class="technology_name">OpenWeather API</div>
+                            <div class="technology_status_bar status_8"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ! Interacting Images -->
+            <div class="interacting_images_wrapper">
+                <img src="images/default.png" alt="Robot face">
+            </div>
+
+            <div class="right_status_wrapper">
+                <!-- ! Notes -->
+                <div class="notes_wrapper">
+                    <div class="decoration_top">
+                        <div class="notes_title">Notes</div>
+                        
+                        <div class="lines">
+                            <div class="line_1"></div>
+                            <div class="line_2"></div>
+                        </div>
+                    </div>
+
+                    <div class="notes_body">
+                        <div class="decoration_left"></div>
+
+                        <div class="notes_content_wrapper">
+                            <div class="notes_list"></div>
+
+                            <div class="add_note_icon">
+                                <span class="material-icons">add</span>
+                            </div>
+                        </div>
+
+                        <div class="decoration_right">
+                            <div class="arrow_left"></div>
+                            <div class="arrow_left"></div>
+                            <div class="arrow_left"></div>
+                        </div>
+                    </div>                    
+                </div>
+
+                <!-- ! Temperature -->
+                <div class="temperature_wrapper">
+                    <div class="outer_circle right_outer_circle">
+                        <div class="inner_circle">
+                            <div class="temperature_info"></div>
+                            <div class="weather_info"></div>
+                        </div>
+                        <div class="one_fourth_circle right_one_fourth_circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ! Commands and Buttons -->
+        <div class="commands_and_buttons">
+            <div class="buttons_wrapper left_buttons_wrapper">
+                <div class="single_button guide_button">Guide</div>
+                
+                <div class="quit_button">
+                    <span class="material-icons">power_settings_new</span>
+                </div>
+            </div>
+
+            <div class="command_suggestions_wrapper">
+                <div class="command_suggestions_instruction">Here are your options:</div>
+                <div class="options_wrapper">
+                    <div class="single_option">
+                        <div class="option_checkbox option_checkbox_1"></div>
+                        <div class="option_detail option_detail_1"></div>
+                    </div>
+                    <div class="single_option">
+                        <div class="option_checkbox option_checkbox_2"></div>
+                        <div class="option_detail option_detail_2"></div>
+                    </div>
+                    <div class="single_option">
+                        <div class="option_checkbox option_checkbox_3"></div>
+                        <div class="option_detail option_detail_3"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="buttons_wrapper right_buttons_wrapper">
+                <div class="single_button modes_button">Modes</div>
+                <div class="single_button history_button">History</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ! Pop up template for Guide, Modes, and History -->
+    <div class="pop_up_wrapper">
+        <div class="title_and_close_button">
+            <div class="pop_up_title"></div>
+            <div class="close_button">
+                <span class="material-icons">cancel</span>
+            </div>
+        </div>
+        <div class="pop_up_main_content"></div>
+    </div>
+
+    <script src="javascript/app.js" type="module"></script>
+</body>
+</html>

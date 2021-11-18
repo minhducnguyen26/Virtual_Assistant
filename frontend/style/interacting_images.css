@@ -1,0 +1,7 @@
+.interacting_images_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: var(--green);
+	font-size: 150px;
+}

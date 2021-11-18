@@ -1,0 +1,149 @@
+.pop_up_wrapper {
+	display: none;
+	position: absolute;
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+	height: 70%;
+	color: var(--green);
+	border: 3px solid var(--green);
+	background-color: black;
+	animation: expand_horizontal 0.5s ease;
+	animation-fill-mode: forwards;
+}
+
+@keyframes expand_horizontal {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 60%;
+	}
+}
+
+.title_and_close_button {
+	border-bottom: 2px solid var(--dark_green);
+	position: relative;
+	animation: fade_in 1s ease;
+}
+
+.hide_title_and_close_button {
+	opacity: 0;
+}
+
+.pop_up_title {
+	font-size: 30px;
+	margin: 10px 0;
+	text-align: center;
+}
+
+.close_button {
+	position: absolute;
+	top: 15%;
+	right: 5%;
+	cursor: pointer;
+}
+
+.hide_pop_up_wrapper {
+	animation: shrink_horizontal 0.5s ease;
+	animation-fill-mode: forwards;
+}
+
+@keyframes shrink_horizontal {
+	0% {
+		width: 60%;
+	}
+	100% {
+		width: 0;
+	}
+}
+
+.pop_up_main_content {
+	animation: fade_in 3s ease;
+}
+
+@keyframes fade_in {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.hide_pop_up_main_content {
+	opacity: 0;
+}
+
+/* ! Guide Button */
+.single_guide_title {
+	margin: 20px 40px;
+	font-size: 20px;
+}
+
+.single_guide_description {
+	margin: 0 100px;
+}
+
+.single_description {
+	margin-bottom: 10px;
+}
+
+/* ! Modes Button */
+.modes_wrapper {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	height: 100%;
+}
+
+.modes_wrapper {
+	display: grid;
+	grid-template-columns: 60% 40%;
+	min-height: 425px;
+}
+
+.current_mode_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	border-right: 2px solid var(--dark_green);
+}
+
+.current_mode_image_wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.current_mode_image {
+	width: 90%;
+}
+
+.current_mode_title {
+	margin-top: 20px;
+}
+
+.single_mode_wrapper {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	margin: 19px 0 0 30px;
+}
+
+.single_mode_image_wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid;
+}
+
+.single_mode_image {
+	width: 69%;
+	height: 81px;
+}
+
+.single_mode_title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

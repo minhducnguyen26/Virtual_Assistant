@@ -1,0 +1,150 @@
+/* ! Notes */
+.right_status_wrapper {
+	display: grid;
+	grid-template-rows: 65% 35%;
+}
+
+.decoration_top {
+	color: var(--green);
+	width: 100%;
+	margin-top: 5%;
+}
+
+.notes_title {
+	margin-left: 10px;
+}
+
+.lines {
+	height: 6px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 2px 0;
+	position: relative;
+}
+
+.line_1 {
+	width: 100%;
+	height: 1px;
+	background-color: var(--dark_green);
+}
+
+.line_2 {
+	width: 100%;
+	height: 1px;
+	background-color: var(--dark_green);
+	margin-top: 5px;
+	position: absolute;
+	top: 3px;
+	left: -13px;
+}
+
+.notes_body {
+	width: 100%;
+	height: 310px;
+	margin-top: 10px;
+	display: grid;
+	grid-template-columns: 5% 85% 10%;
+}
+
+.decoration_left {
+	height: 115%;
+	width: 1px;
+	background-color: var(--dark_green);
+	margin-top: -30px;
+	margin-left: 3px;
+}
+
+.notes_content_wrapper {
+	border: 5px solid var(--green);
+	display: grid;
+	grid-template-rows: 90% 10%;
+}
+
+.notes_list {
+	color: var(--green);
+	padding: 10px;
+	font-size: 14px;
+	max-height: 270px;
+	overflow: hidden;
+}
+
+.single_note {
+	margin-bottom: 7px;
+}
+
+.note_done {
+	text-decoration: line-through;
+	color: var(--dark_green);
+}
+
+.add_note_icon {
+	color: var(--dark_green);
+	display: flex;
+	justify-content: flex-end;
+	margin-right: 5px;
+}
+
+.add_note_icon:hover {
+	cursor: pointer;
+	color: var(--green);
+}
+
+.decoration_right {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.arrow_left {
+	width: 0;
+	height: 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	border-right: 10px solid var(--dark_green);
+	margin-bottom: 5px;
+}
+
+.temperature_wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.right_outer_circle {
+	margin-top: 0;
+}
+
+.temperature_info {
+	color: var(--green);
+	font-size: 40px;
+	margin-left: 8px;
+}
+
+.weather_info {
+	color: var(--dark_green);
+	font-size: 11px;
+	max-width: 80%;
+	text-align: center;
+}
+
+.right_one_fourth_circle {
+	position: absolute;
+	width: 100px;
+	height: 131px;
+	border-right: 15px solid transparent;
+	border-bottom: 15px solid var(--green);
+	border-left: 15px solid transparent;
+	border-top: 15px solid transparent;
+	border-radius: 50px;
+	transform: rotate(325deg);
+	animation: reverse_infinite_rotation 2s linear infinite;
+}
+
+@keyframes reverse_infinite_rotation {
+	from {
+		transform: rotate(360deg);
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}

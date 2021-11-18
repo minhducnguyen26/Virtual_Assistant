@@ -1,0 +1,177 @@
+.app_technologies_list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.single_technology_wrapper {
+	display: flex;
+	flex-direction: column;
+}
+
+.technology_name {
+	color: var(--green);
+	font-size: 14px;
+}
+
+.technology_status_bar {
+	height: 10px;
+	margin-bottom: 9px;
+	margin-top: 3px;
+}
+
+.technology_status_bar:last-child {
+	margin-bottom: 0;
+}
+
+.status_1 {
+	width: 40%;
+	animation: fade_in_1 0.3s ease;
+	animation-delay: 1.5s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_1 {
+	0% {
+		opacity: 0;
+		width: 0;
+	}
+	100% {
+		opacity: 1;
+		width: 40%;
+		background-color: var(--dark_green);
+	}
+}
+
+.status_2 {
+	width: 70%;
+	animation: fade_in_2 0.3s ease;
+	animation-delay: 1.6s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_2 {
+	0% {
+		opacity: 0;
+		width: 0;
+	}
+	100% {
+		opacity: 1;
+		width: 70%;
+		background-color: var(--dark_green);
+	}
+}
+
+.status_3 {
+	width: 100%;
+	animation: fade_in_3 0.3s ease;
+	animation-delay: 1.7s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_3 {
+	0% {
+		opacity: 0;
+		width: 0;
+	}
+	100% {
+		opacity: 1;
+		width: 100%;
+		background-color: var(--dark_green);
+	}
+}
+
+.status_4 {
+	width: 90%;
+	animation: fade_in_4 0.3s ease;
+	animation-delay: 1.8s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_4 {
+	0% {
+		opacity: 0;
+		width: 0;
+	}
+	100% {
+		opacity: 1;
+		width: 90%;
+		background-color: var(--dark_green);
+	}
+}
+
+.status_5 {
+	width: 60%;
+	animation: fade_in_5 0.3s ease;
+	animation-delay: 1.9s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_5 {
+	0% {
+		opacity: 0;
+		width: 0;
+	}
+	100% {
+		opacity: 1;
+		width: 60%;
+		background-color: var(--dark_green);
+	}
+}
+
+.status_6 {
+	width: 30%;
+	animation: fade_in_6 0.3s ease;
+	animation-delay: 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_6 {
+	0% {
+		opacity: 0;
+		width: 0;
+	}
+	100% {
+		opacity: 1;
+		width: 30%;
+		background-color: var(--dark_green);
+	}
+}
+
+.status_7 {
+	width: 10%;
+	animation: fade_in_7 0.3s ease;
+	animation-delay: 2.1s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_7 {
+	0% {
+		opacity: 0;
+		width: 0;
+	}
+	100% {
+		opacity: 1;
+		width: 10%;
+		background-color: var(--dark_green);
+	}
+}
+
+.status_8 {
+	width: 10%;
+	animation: fade_in_8 0.3s ease;
+	animation-delay: 2.2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes fade_in_8 {
+	0% {
+		opacity: 0;
+		width: 0;
+	}
+	100% {
+		opacity: 1;
+		width: 10%;
+		background-color: var(--dark_green);
+	}
+}
