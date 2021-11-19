@@ -16,12 +16,14 @@ export function handle_calculations(user_request) {
 	else if (user_request.includes("-")) {
 		match = true;
 
+		equation_as_string = equation_as_string.replace("-", "minus ");
 		equation_as_string += "equals ";
 	}
 	//
 	else if (user_request.includes("*")) {
 		match = true;
 
+		equation_as_string = equation_as_string.replace("*", "times ");
 		equation_as_string += "equals ";
 	}
 	//
@@ -29,6 +31,7 @@ export function handle_calculations(user_request) {
 		match = true;
 		result = result.toFixed(2);
 
+		equation_as_string = equation_as_string.replace("/", "divided by ");
 		equation_as_string += "equals ";
 	}
 	//
