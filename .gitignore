@@ -1,5 +1,3 @@
 node_modules/
 package-lock.json
 .env
-frontend/.DS_STORE
-frontend/javascript/data.json
