@@ -12,3 +12,6 @@ For this project, I used:
 - OpenWeather API to get the local temperature.
 
 What I like the most about this project is that it could be as big as I want it to be since there's always more room to make the assistant more intelligent. Also, it gave me a better understanding of JavaScript and MongoDB before moving on and learning more advanced technologies like TypeScript and Firebase. 
+
+* App Demo: 
+https://www.youtube.com/watch?v=4AcxBPyzvJc&t=6s
